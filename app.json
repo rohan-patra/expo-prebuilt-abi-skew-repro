@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "prebuilt-abi-skew-repro",
+    "slug": "prebuilt-abi-skew-repro",
+    "version": "1.0.0",
+    "platforms": ["ios"],
+    "ios": {
+      "bundleIdentifier": "com.example.prebuiltabiskewrepro"
+    }
+  }
+}
