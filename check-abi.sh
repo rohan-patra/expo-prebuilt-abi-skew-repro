@@ -9,7 +9,7 @@ FLAVOR="${1:-release}"
 CORE_TGZ="node_modules/expo-modules-core/prebuilds/output/$FLAVOR/xcframeworks/ExpoModulesCore.tar.gz"
 
 if [[ ! -f "$CORE_TGZ" ]]; then
-  echo "error: $CORE_TGZ not found — run 'npm install' first" >&2
+  echo "error: $CORE_TGZ not found; run 'npm install' first" >&2
   exit 1
 fi
 

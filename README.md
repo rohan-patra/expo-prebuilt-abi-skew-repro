@@ -25,7 +25,7 @@ dependency-bot or targeted update of `expo-file-system`/`expo-font` (published 2
 still-range-satisfying `expo-modules-core@56.0.15` lockfile entry. That is exactly how our
 production app shipped a broken TestFlight build.
 
-## Reproduce (fast — no Xcode build needed, ~10s)
+## Reproduce (fast, no Xcode build needed, ~10s)
 
 The prebuilt binaries ship inside the npm tarballs, so the incompatibility can be shown
 directly with `nm`:
@@ -53,7 +53,7 @@ Demangled, these are the requirements/default implementations added in core 56.0
 `AnyModule._decorateModule(object:in:appContext:)` (PRs #46547, #46612).
 
 The reverse direction breaks too: 56.0.16 removed the `_exposedDefinition` symbols that
-module binaries built against 56.0.9–56.0.15 import.
+module binaries built against 56.0.9-56.0.15 import.
 
 ## Reproduce (full build)
 
